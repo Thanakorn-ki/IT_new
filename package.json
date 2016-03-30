@@ -1,0 +1,22 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "\"# IT_new\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/salapao2136/IT_new.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/salapao2136/IT_new/issues"
+  },
+  "homepage": "https://github.com/salapao2136/IT_new#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
