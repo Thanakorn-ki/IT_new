@@ -1,25 +1,176 @@
 <!DOCTYPE html>
-<html  ng-app="itApp">
+<html lang="en" ng-app="itApp">
   <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <title>Parallax Template - Materialize</title>
 
-    <!--Import Google Icon Font-->
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
     <script type="text/javascript" src="js/angular.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
 
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   </head>
-
   <body ng-controller="itCtrl">
-    {{test}}
 
+    <div class="top-nav">
+      <div class="container">
+        <ul class="font-top">
+          <li class="hover-top">
+            <a href="#" class="a-color">IT_KMUTNB</a>
+          </li>
+          <li class="hover-top">
+            <a href="#" class="a-color">Navbar Link</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <nav class="white z-depth-0" role="navigation" style="margin:30px 0px 20px 0px;border-bottom: 1px solid #c3c7ce;">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="#" class="brand-logo">{{test[0]}}</a>
+        <ul class="right hide-on-med-and-down">
+          <li>
+            <a href="#">Navbar Link</a>
+          </li>
+          <li>
+            <a href="#">Navbar Link</a>
+          </li>
+        </ul>
+
+        <ul id="nav-mobile" class="side-nav">
+          <li>
+            <a href="#">Navbar Link</a>
+          </li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse">
+          <i class="material-icons">menu</i>
+        </a>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="slider">
+        <ul class="slides">
+          <li>
+            <img src="https://scontent.fbkk5-2.fna.fbcdn.net/hphotos-xft1/v/t1.0-9/11227564_10205391606460620_3509616807128218515_n.jpg?oh=297c6ddd651b6f3a9470a8757f1b0c9f&oe=578F7A48">
+            <div class="caption center-align">
+              <h3>This is our big Tagline!</h3>
+              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="https://scontent.fbkk5-2.fna.fbcdn.net/hphotos-xtf1/v/t1.0-9/12472722_1140121066032481_3845520025002338163_n.jpg?oh=0d35b8c9c15fdcf12836ae9ec2d99e90&oe=57795228">
+            <div class="caption left-align">
+              <h3>Left Aligned Caption</h3>
+              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="https://scontent.fbkk5-2.fna.fbcdn.net/hphotos-xpf1/v/t1.0-9/12552693_1034448203264287_6866542501107858941_n.jpg?oh=1b8029af0226b1deacbbd553d6a2b035&oe=578CE610">
+            <div class="caption right-align">
+              <h3>Right Aligned Caption</h3>
+              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="https://scontent.fbkk5-2.fna.fbcdn.net/hphotos-xpf1/v/t1.0-9/12096465_948909678524585_8280914511881872237_n.jpg?oh=11515ec95e200c36d08117f39446f40a&oe=578121AD">
+            <div class="caption center-align">
+              <h3>This is our big Tagline!</h3>
+              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="row">
+        <h3>News & Events</h3>
+        <div class="col s12 m6 l4">
+          <div class="card">
+            <div class="card-image">
+              <img src="https://scontent.fbkk5-2.fna.fbcdn.net/hphotos-xaf1/v/t1.0-9/1916354_10205391606540622_8857640990535589912_n.jpg?oh=8b485b63749ec6ea4a324d13706e1671&oe=5796AC24">
+              <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="card">
+            <div class="card-image">
+              <img src="https://scontent.fbkk5-2.fna.fbcdn.net/hphotos-xpa1/v/t1.0-0/p526x296/12140791_983679735062030_47164298274997402_n.jpg?oh=84636fdc6efbe64fb812d60e0c3e8211&oe=57912C2B">
+              <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="card">
+            <div class="card-image">
+              <img src="https://scontent.fbkk5-2.fna.fbcdn.net/hphotos-xpa1/v/t1.0-0/p526x296/12140791_983679735062030_47164298274997402_n.jpg?oh=84636fdc6efbe64fb812d60e0c3e8211&oe=57912C2B">
+              <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="parallax-container">
+      <div class="parallax"><img src="https://scontent.fbkk5-2.fna.fbcdn.net/hphotos-xtf1/v/t1.0-9/1915364_1112573488753269_3797081431031132403_n.jpg?oh=8c2197596c38e91edc58e2ab141c2856&oe=5783B0E4"></div>
+    </div>
+    <footer class="page-footer teal">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Company Bio</h5>
+            <p class="grey-text text-lighten-4">We are a team of college students working on</p>
+
+          </div>
+          <div class="col l3 s12">
+            <h5 class="white-text">Settings</h5>
+            <ul>
+              <li>
+                <a class="white-text" href="#!">Link 1</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col l3 s12">
+            <h5 class="white-text">Connect</h5>
+            <ul>
+              <li>
+                <a class="white-text" href="#!">Link 1</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          Made by
+          <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+        </div>
+      </div>
+    </footer>
 
   </body>
 </html>
