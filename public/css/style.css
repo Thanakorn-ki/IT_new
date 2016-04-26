@@ -1,91 +1,91 @@
-    @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400);
-    .b,
-    .bb {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-attachment: fixed;
-        background-size: cover;
-        background-position: center;
-    }
-    
-    .bb {
-        background-attachment: fixed;
-        background-size: cover;
-        background-position: center;
-        display: none;
-    }
-    .message {
-        position: absolute;
-        top: -200px;
-        left: 50%;
-        transform: translate(-50%, 0%);
-        width: 300px;
-        background: white;
-        border-radius: 8px;
-        padding: 30px;
-        text-align: center;
-        font-weight: 300;
-        color: #2c2928;
-        opacity: 0;
-        transition: top 0.3s cubic-bezier(0.31, 0.25, 0.5, 1.5), opacity 0.2s ease-in-out;
-        
-    }
-    
-    .message .check {
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translate(-50%, -50%) scale(4);
-        width: 120px;
-        height: 110px;
-        background: #71c341;
-        color: white;
-        font-size: 3.8rem;
-        padding-top: 10px;
-        border-radius: 50%;
-        opacity: 0;
-        transition: transform 0.2s 0.25s cubic-bezier(0.31, 0.25, 0.5, 1.5), opacity 0.1s 0.25s ease-in-out;
-    }
-    
-    .message .scaledown {
-        transform: translate(-50%, -50%) scale(1);
-        opacity: 1;
-    }
-    
-    .message p {
-        font-size: 1.1rem;
-        margin: 25px 0px;
-        padding: 0;
-    }
-    
-    .message p:nth-child(2) {
-        font-size: 2.3rem;
-        margin: 40px 0px 0px 0px;
-    }
-    
-    .message #ok {
-        position: relative;
-        color: white;
-        border: 0;
-        background: #71c341;
-        width: 100%;
-        height: 50px;
-        border-radius: 6px;
-        font-size: 1.2rem;
-        transition: background 0.2s ease;
-        outline: none;
-    }
-    
-    .message #ok:hover {
-        background: #8ecf68;
-    }
-    
-    .message #ok:active {
-        background: #5a9f32;
-    }
-    
-    .comein {
-        top: 150px;
-        opacity: 1;
-    }
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+.top-nav{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 30px;
+  z-index: 5;
+  color: #c3c7ce;
+  background-color: #3a4557;
+}
+.font-top{
+  margin-top: 0px;
+  position: absolute;
+  top: 0;
+}
+.hover-top{
+    float: left;
+    padding: 5px 5px 0px 5px;
+    height: 30px
+}
+.hover-top:hover{
+    background-color: #253545;
+    float: left;
+    padding: 5px 5px 0px 5px;
+    height: 30px
+}
+.a-color{
+   color: #c3c7ce;
+}
+
+.parallax-container {
+  height: 100px;
+  min-height: 200px;
+}
